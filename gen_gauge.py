@@ -10,7 +10,7 @@ from pxr import Usd, Sdf
 GROUND_PATH='omniverse://localhost/NVIDIA/Assets/Isaac/4.2/Isaac/Environments/Terrains/flat_plane.usd'
 GAUGE_PATH='omniverse://localhost/Library/Pressure Gauge 2.usd'
 NOW=datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-OUTPUT_DIR = "/home/ifodor/Downloads/data/gauge_data_basic_"+NOW
+OUTPUT_DIR = os.path.expanduser("~/data/gauge_data_basic_"+NOW)
 
 
 def normalize_rotation(rotation):
